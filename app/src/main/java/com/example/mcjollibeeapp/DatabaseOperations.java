@@ -10,8 +10,13 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
+import android.view.View;
 
+import java.io.ByteArrayOutputStream;
+import java.sql.Array;
 import java.sql.SQLException;
 import java.sql.Struct;
 import java.util.ArrayList;
@@ -32,7 +37,6 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 
     public DatabaseOperations(Context context){
         super(context,dbName,null,1);
-        System.out.println("working");
     }
 
     @Override
@@ -56,10 +60,8 @@ public class DatabaseOperations extends SQLiteOpenHelper {
                 "FOREIGN KEY (orderId) REFERENCES ordersTable(orderId)  ON DELETE CASCADE ON UPDATE CASCADE)");
         System.out.println("Table ordersTable has been created successfully");
         db.execSQL("PRAGMA foreign_keys = ON");
+
         System.out.println("Foreign key Enabled");
-
-
-
 
     }
 
@@ -69,6 +71,43 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 
         db.execSQL("DROP TABLE IF EXISTS "+userTable);
         onCreate(db);
+    }
+
+    public void createTables(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.isOpen();
+    }
+
+    public boolean isPreInserted(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("SELECT COUNT(*) FROM menuTable", null);
+        System.out.println("count "+res.getCount());
+        res.moveToFirst();
+        int count = res.getInt(0);
+        if(count == 0) {
+            return true;
+            }
+        else{
+            return false;
+
+        }
+    }
+
+    public void preInsertMenu(ArrayList<String> foodName, ArrayList<Integer> foodPrice, ArrayList<String> foodType, ArrayList<byte[]> imageByte) {
+        SQLiteDatabase db = this.getWritableDatabase();
+            for (int i = 0; i < foodName.size(); i++) {
+                ContentValues cv = new ContentValues();
+                cv.put("foodImage",imageByte.get(i));
+                cv.put("foodName",foodName.get(i));
+                cv.put("foodType",foodType.get(i));
+                cv.put("foodPrice",foodPrice.get(i));
+
+                db.insertOrThrow("menuTable",null,cv);
+                System.out.println("Preinserted");
+
+
+
+            }
     }
 
     public void foreignKeyEnable(boolean trulse){
@@ -183,6 +222,7 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 
     public boolean insertUser(byte[] userImage, String firstName, String lastName, int age, String address, String contactNumber, String username, String password, String userType){
         SQLiteDatabase db = this.getWritableDatabase();
+        System.out.println("1");
         ContentValues cv = new ContentValues();
         if(userImage != null) {
             cv.put("userImage", userImage);

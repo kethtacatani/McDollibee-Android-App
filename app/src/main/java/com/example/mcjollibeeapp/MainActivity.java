@@ -3,7 +3,10 @@ package com.example.mcjollibeeapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -21,6 +24,7 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        db = new DatabaseOperations(this);
+        if(db.isPreInserted()) {
+            preInsert();
+        }
+
 
         login = (Button)findViewById(R.id.userLogin);
         adminLogin = (Button)findViewById(R.id.adminLogin);
@@ -141,9 +150,6 @@ public class MainActivity extends AppCompatActivity {
                 loginPanel.setVisibility(View.VISIBLE);
             }
         });
-
-
-        db = new DatabaseOperations(this);
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -246,5 +252,65 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void preInsert(){
+        ArrayList<Integer> images = new ArrayList<>();
+        ArrayList<byte[]> imageByte = new ArrayList<>();
+        images.add(R.drawable.burger);
+        images.add(R.drawable.sphaggeti);
+        images.add(R.drawable.chicken);
+        images.add(R.drawable.chicken_nugget);
+        images.add(R.drawable.chicken_wings);
+        images.add(R.drawable.sprite);
+        ArrayList<String> foodName = new ArrayList<>();
+        foodName.add("Burger");
+        foodName.add("Spaghetti");
+        foodName.add("Chicken");
+        foodName.add("Chicken Nugget");
+        foodName.add("Chicken Wings");
+        foodName.add("Sprite");
+        ArrayList<Integer> foodPrice = new ArrayList<>();
+        foodPrice.add(70);
+        foodPrice.add(80);
+        foodPrice.add(100);
+        foodPrice.add(110);
+        foodPrice.add(90);
+        foodPrice.add(50);
+        ArrayList<String> foodType = new ArrayList<>();
+        foodType.add("Dessert");
+        foodType.add("Dessert");
+        foodType.add("Meal");
+        foodType.add("Meal");
+        foodType.add("Meal");
+        foodType.add("Drinks");
+        System.out.println("size is "+images.size());
+        for (int i = 0; i < images.size(); i++) {
+            System.out.println("i is "+i );
+
+            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), images.get(i));
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            if(bitmap.getWidth() >= 4000 || bitmap.getHeight() >= 4000){
+                bitmap = Bitmap.createScaledBitmap(bitmap,bitmap.getWidth()/8,bitmap.getHeight()/8,false);
+                System.out.println("pixelated");
+            }
+            else if(bitmap.getWidth() >= 2000 || bitmap.getHeight() >= 2000){
+                bitmap = Bitmap.createScaledBitmap(bitmap,bitmap.getWidth()/4,bitmap.getHeight()/4,false);
+                System.out.println("pixelated from > 2k");
+            }
+            else if(bitmap.getWidth() > 1000 || bitmap.getHeight() > 1000){
+                bitmap = Bitmap.createScaledBitmap(bitmap,bitmap.getWidth()/2,bitmap.getHeight()/2,false);
+                System.out.println("pixelated from > 4k");
+            }
+
+
+            bitmap.compress(Bitmap.CompressFormat.PNG,100, stream);
+            imageByte.add(stream.toByteArray());
+
+
+
+        }
+
+        db.preInsertMenu(foodName,foodPrice,foodType,imageByte);
     }
 }

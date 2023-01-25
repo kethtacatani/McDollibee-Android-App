@@ -119,6 +119,8 @@ public class HomeActivity extends AppCompatActivity {
 
 
         db= new DatabaseOperations(this);
+
+
         String userID = getIntent().getStringExtra("id");
         userFirstNameAL = db.getUser("firstName",null,"id="+userID);
         userLastNameAL = db.getUser("lastName",null,"id="+userID);
@@ -264,7 +266,6 @@ public class HomeActivity extends AppCompatActivity {
                     mealCB.setTextColor(ContextCompat.getColor(this, R.color.white));
                     mealWhere="null";
                 }
-                System.out.println("yawa1");
                 refreshTable();
                 break;
             case R.id.editFoodDessertCB:
@@ -278,7 +279,6 @@ public class HomeActivity extends AppCompatActivity {
                     dessertCB.setTextColor(ContextCompat.getColor(this, R.color.white));
                     dessertWhere = "null";
                 }
-                System.out.println("yawa2");
                 refreshTable();
                 break;
             case R.id.editFoodDrinksCB:
@@ -292,7 +292,6 @@ public class HomeActivity extends AppCompatActivity {
                     drinksCB.setTextColor(ContextCompat.getColor(this, R.color.white));
                     drinksWhere="null";
                 }
-                System.out.println("yawa3");
                 refreshTable();
                 break;
             default:

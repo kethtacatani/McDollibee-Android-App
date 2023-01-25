@@ -115,6 +115,7 @@ public class HomeActivity extends AppCompatActivity {
 
         System.out.println("commit sample");
         System.out.println("commite received");
+        System.out.println("confirm");
 
 
         db= new DatabaseOperations(this);

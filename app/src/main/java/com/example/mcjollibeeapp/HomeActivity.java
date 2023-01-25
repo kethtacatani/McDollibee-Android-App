@@ -114,6 +114,7 @@ public class HomeActivity extends AppCompatActivity {
         userPicAL = new ArrayList<Bitmap>();
 
         System.out.println("commit sample");
+        System.out.println("commite received");
 
 
         db= new DatabaseOperations(this);

@@ -113,6 +113,8 @@ public class HomeActivity extends AppCompatActivity {
         userLastNameAL = new ArrayList<String>();
         userPicAL = new ArrayList<Bitmap>();
 
+        System.out.println("commit sample");
+
 
         db= new DatabaseOperations(this);
         String userID = getIntent().getStringExtra("id");

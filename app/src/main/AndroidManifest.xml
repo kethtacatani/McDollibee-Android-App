@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mcjollibeeapp">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.McJollibeeApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".AppInfo"
+            android:exported="false" />
+        <activity
+            android:name=".myOrders"
+            android:exported="false" />
+        <activity
+            android:name=".checkOut"
+            android:exported="false" />
+        <activity
+            android:name=".settings"
+            android:exported="false" />
+        <activity
+            android:name=".editEmployees"
+            android:exported="false"
+            android:label="Manage Employees" />
+        <activity
+            android:name=".editUsers"
+            android:exported="false"
+            android:label="Manage Users"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".editOrders"
+            android:exported="false"
+            android:label="Manage Orders" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="Order Meal Here" />
+        <activity
+            android:name=".registerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editMenu"
+            android:exported="false"
+            android:label="Manage Menu" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

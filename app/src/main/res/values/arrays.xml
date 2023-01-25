@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="text_sizes">
+        <item>6sp</item>
+        <item>8sp</item>
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>14sp</item>
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>20sp</item>
+    </array>
+    <array name="text_sizes2">
+        <item>6sp</item>
+        <item>8sp</item>
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>14sp</item>
+    </array>
+    <array name="name_sizes">
+        <item>20sp</item>
+        <item>23sp</item>
+        <item>25sp</item>
+        <item>28sp</item>
+        <item>30sp</item>
+    </array>
+</resources>

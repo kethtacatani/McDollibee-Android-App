@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context=".editMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/textView4">
+
+        <TextView
+            android:id="@+id/sortUser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/sort_type"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ID"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/sortASCDESC"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/sortASCDESC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_up" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/orderTableHeader"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/userIDTV"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:text="ID"
+            android:textStyle="bold"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:textColor="#292929" />
+
+        <TextView
+            android:id="@+id/userNameTV"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/header_table_cells"
+            android:breakStrategy="high_quality"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="Username"
+            android:textColor="#292929"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/userPassTV"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:text="Password"
+            android:textColor="#292929" />
+        <TextView
+            android:id="@+id/firstNameTV"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:text="First Name"
+            android:textColor="#292929" />
+        <TextView
+            android:id="@+id/userLastNameTV"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="1dp"
+            android:maxLines="1"
+            android:autoSizeTextType="uniform"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:text="Last Name"
+            android:textColor="#292929" />
+        <TextView
+            android:id="@+id/userAgeTV"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Age"
+            android:breakStrategy="simple"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:textColor="#292929" />
+
+        <TextView
+            android:id="@+id/userAddressTV"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:text="Address"
+            android:textColor="#292929" />
+
+        <TextView
+            android:id="@+id/userContactTV"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:text="Contact No."
+            android:autoSizeTextType="uniform"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:textStyle="bold"
+
+            android:textColor="#292929" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/editTableFrame"
+        android:layout_width="match_parent"
+        android:layout_height="381dp"
+        android:layout_above="@+id/addUser"
+        android:background="@color/white"
+        android:layout_below="@+id/orderTableHeader"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/addUser"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ListView
+            android:id="@+id/editOrderTableLV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:dividerHeight="-0.5dp"
+            android:footerDividersEnabled="false"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="40dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center|left"
+        android:text="User Table"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addUser"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+
+        android:layout_toStartOf="@+id/deleteUserBtn"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/deleteUserBtn" />
+
+    <Button
+        android:id="@+id/addAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        android:enabled="false"
+        android:text="Make Admin"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/addUser" />
+
+    <Button
+        android:id="@+id/removeAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        android:enabled="false"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="Remove Admin"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/addUser" />
+
+    <Button
+        android:id="@+id/editUserBtn"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:enabled="false"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/deleteUserBtn"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/editUserBtn"
+        android:enabled="false"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/editUserBtn" />
+
+
+
+</RelativeLayout>

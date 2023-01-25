@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orderBottomFrame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/manageOrderDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/bottom_sheet_round"
+        android:elevation="100dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/orderTotalItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Order Total"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/completeOrderItem"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/deleteOrderItem"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_frame"
+            android:padding="0dp"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/completeOrderItem"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_frame"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="0dp"
+            android:text="Complete Order"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:id="@+id/orderDescriptiom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="Items in Order #"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="Status: Paid"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/orderTableHeader"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/orderDescriptiom">
+
+            <TextView
+                android:id="@+id/itemNameItem"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:autoSizePresetSizes="@array/text_sizes2"
+                android:background="@drawable/header_table_cells"
+                android:gravity="center|left"
+                android:paddingLeft="3dp"
+                android:text="Item Name"
+                android:textColor="#292929"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemPriceItem"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:autoSizePresetSizes="@array/text_sizes2"
+                android:background="@drawable/header_table_cells"
+                android:gravity="center|left"
+                android:paddingLeft="3dp"
+                android:text="Item Price"
+                android:textColor="#292929"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantityItem"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:autoSizePresetSizes="@array/text_sizes2"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/header_table_cells"
+                android:breakStrategy="balanced"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="1dp"
+                android:text="Quantity"
+                android:textColor="#292929"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemTotalItem"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:autoSizePresetSizes="@array/text_sizes2"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/header_table_cells"
+                android:gravity="center|left"
+                android:paddingLeft="3dp"
+                android:text="Item Total"
+                android:textColor="#292929"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/editTableFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderTableHeader"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/orderTotalItem"
+            app:layout_constraintTop_toBottomOf="@+id/orderTableHeader"
+            tools:layout_editor_absoluteX="20dp">
+
+            <ListView
+                android:id="@+id/itemTableLV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/activatedBackgroundIndicator"
+                android:dividerHeight="-0.5dp"
+                android:footerDividersEnabled="false" />
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

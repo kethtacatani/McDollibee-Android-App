@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">McDollibee</string>
+    <string name="activity_2">Page 2</string>
+    <string-array name="sort_menu">
+        <item>ID</item>
+        <item>Food Name</item>
+        <item>Food Type</item>
+        <item>Food Price</item>
+    </string-array>
+
+    <string-array name="sort_user">
+        <item>ID</item>
+        <item>First Name</item>
+        <item>Last Name</item>
+        <item>Age</item>
+        <item>Address</item>
+        <item>Contact Number</item>
+        <item>Username</item>
+        <item>Password</item>
+    </string-array>
+    <string-array name="sort_order">
+        <item>ID</item>
+        <item>Customer ID</item>
+        <item>Date and Time</item>
+        <item>Attendant ID No.</item>
+        <item>Payment Method</item>
+        <item>Order Cost</item>
+        <item>Status</item>
+    </string-array>
+    <string name="guide"></string>
+    <string name="hyperlink">     McDollibee is a food ordering app built using the Java programming language and developed in Android Studio.\n<n>
+    </n>The app allows users to easily browse and order from a variety of menu items.\n<n>
+    </n>It also features an admin area where admin staff can manage and update menu items, process orders, and track customer and staff information.\n<n>
+    </n>More information and update from this<a href="https://drive.google.com/drive/folders/1svM6LnvazH_UTLZBl2WJIJD9EX1RRNbR?usp=sharing"> link</a>.\n\nDeveloper: Keth Dominic Tacatani
+Instructor: Gardson Binasbas
+College: Bohol Island State University Calape Campus
+
+Email: kethtacatani@gmail.com</string>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable-anydpi/ic_action_name_login.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable-xxhdpi/top_left_radius.xml" value="0.1" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/attach_file_btn.xml" value="0.156" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/background_frame.xml" value="0.1765" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/background_info_user.xml" value="0.1625" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/background_with_shadow.xml" value="0.102" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/border_color.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/border_color_selected.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/bottom_sheet_round.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/circle_shap.xml" value="0.2585" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/cutom_radio_button.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/header_table_cells.xml" value="0.1405" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/ic_baseline_admin_panel_settings_24.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/listview_items_round_radius.xml" value="0.102" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/non_round_corners.xml" value="0.1" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/radio_bacground_no_shadow.xml" value="0.2445" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/radio_background_shadow.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/radio_checked.xml" value="0.156" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/radio_home.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/right_left_radius.xml" value="0.1" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/sample.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/samplesvg.xml" value="0.12" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/selected_checkbox.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/selected_table_cells_non_round.xml" value="0.1405" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/sort_type.xml" value="0.136" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/tale_cells_non_round.xml" value="0.2" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/top_left_radius.xml" value="0.1" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/white_table_cells_non_round.xml" value="0.2595" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/drawable/whitewithborder.xml" value="0.1" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/font/acme.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/font/jellee.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_app_info.xml" value="0.264" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_check_out.xml" value="0.264" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_edit_employees.xml" value="0.4" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_edit_menu.xml" value="0.4" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_edit_orders.xml" value="0.264" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_edit_users.xml" value="0.2" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_main2.xml" value="0.25317028985507245" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_my_orders.xml" value="0.264" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_register.xml" value="0.4" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/activity_settings.xml" value="0.2" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/attendant_layout.xml" value="0.39965397923875434" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/dropdown.xml" value="0.8" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/edit_table_bottom_sheet.xml" value="0.264" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/item_orders_layout.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/meal_menu_info.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/meal_menu_selected.xml" value="0.4" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/menu_table.xml" value="0.2" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/order_table_layout.xml" value="0.4" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/ordered_food_bottom.xml" value="0.17042349726775957" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/ordered_food_item.xml" value="0.253125" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/orderedfoodcustom.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/orders_bottom_sheet.xml" value="0.4" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/scroll.xml" value="0.1" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/successful_order.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/layout/user_menu_custom_lv.xml" value="0.36321483771251933" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/menu/app_menu.xml" value="0.19074074074074074" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/menu/sort_asc_desc.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/menu/sort_employee.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/menu/sort_items.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/menu/sort_menu.xml" value="0.536" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/menu/sort_order.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/menu/sort_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Keth Dominic/AndroidStudioProjects/McJollibeeApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2575" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

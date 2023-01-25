@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".myOrders">
+
+
+
+    >
+
+    <FrameLayout
+        android:id="@+id/orderedFood"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_frame"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ListView
+            android:id="@+id/orderedFoodListViewOrdered"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:elevation="100dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:footerDividersEnabled="false"
+            android:nestedScrollingEnabled="true"
+            android:scrollbars="none" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/chekcoutText"
+        android:layout_width="225dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/background_with_shadow"
+        android:elevation="10dp"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:gravity="center|left"
+        android:paddingLeft="55dp"
+        android:paddingTop="11dp"
+        android:text="Ordered Food"
+        android:textColor="@color/jollibee"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        >
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/backOderFood"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/chekcoutText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:elevation="100dp"
+        android:src="@drawable/ic_action_back"></ImageView>
+
+
+</RelativeLayout>

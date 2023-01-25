@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/userID"
+        android:title="ID"
+        />
+    <item android:id="@+id/username"
+        android:title="Username"
+        />
+    <item android:id="@+id/password"
+        android:title="Password"
+        />
+    <item android:id="@+id/firstName"
+        android:title="First Name"
+        />
+    <item android:id="@+id/lastName"
+        android:title="Last Name"
+        />
+    <item android:id="@+id/age"
+        android:title="Age"
+        />
+    <item android:id="@+id/address"
+        android:title="Address"
+        />
+    <item android:id="@+id/contactNumber"
+        android:title="Contact No."
+        />
+
+
+</menu>

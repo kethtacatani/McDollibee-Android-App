@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/orderIdSort"
+        android:title="Order ID"
+        />
+    <item android:id="@+id/customerIdSort"
+        android:title="Customer ID"
+        />
+    <item android:id="@+id/dateTimeSort"
+        android:title="Date and Time"
+        />
+    <item android:id="@+id/attendantIdSort"
+        android:title="Attendant ID"
+        />
+    <item android:id="@+id/paymentMethodSort"
+        android:title="Payment Method"
+        />
+    <item android:id="@+id/orderCOstSort"
+        android:title="Order Cost"
+        />
+    <item android:id="@+id/statusSort"
+        android:title="Status"
+        />
+</menu>

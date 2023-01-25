@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/manageUserPanel"
+        android:title="Manage Menu" />
+    <item
+        android:id="@+id/manageOrders"
+        android:title="Manage Orders" />
+    <item
+        android:id="@+id/manageUsers"
+        android:title="Manage Users" />
+    <item
+        android:id="@+id/manageEmployee"
+        android:title="Manage Employees" />
+    <item
+        android:id="@+id/manageAdmins"
+        android:title="Manage Admins" />
+    <item
+        android:id="@+id/adminLogout"
+        android:title="Logout" />
+
+
+</menu>

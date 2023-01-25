@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tableRowMenu"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/foodPic"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:background="@drawable/white_table_cells_non_round"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/foodIdTV"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_table_cells_non_round"
+            android:gravity="center|left"
+            android:paddingLeft="3dp"
+            android:text="0"
+            android:textColor="#292929" />
+
+        <TextView
+            android:id="@+id/foodNameTV"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="3dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:autoSizePresetSizes="@array/text_sizes"
+            android:textColor="#292929"
+            android:background="@drawable/white_table_cells_non_round"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/foodTypeTV"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="3dp"
+            android:textColor="#292929"
+            android:background="@drawable/white_table_cells_non_round"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/foodPriceTV"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="3dp"
+            android:textColor="#292929"
+            android:background="@drawable/white_table_cells_non_round"
+            android:text="TextView" />
+    </LinearLayout>
+</LinearLayout>

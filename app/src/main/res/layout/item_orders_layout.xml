@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/itemOrdersItem"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@+id/textView4"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/itemNameItem"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_table_cells_non_round"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:text="Item Name"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:textColor="#292929" />
+        <TextView
+            android:id="@+id/itemPriceItem"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_table_cells_non_round"
+            android:gravity="center|left"
+            android:paddingLeft="3dp"
+            android:text="Item Price"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:textColor="#292929" />
+
+        <TextView
+            android:id="@+id/quantityItem"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_table_cells_non_round"
+            android:gravity="center|left"
+            android:paddingLeft="3dp"
+            android:maxLines="1"
+            android:paddingRight="1dp"
+            android:autoSizeTextType="uniform"
+            android:breakStrategy="balanced"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:text="Quantity"
+            android:textColor="#292929" />
+        <TextView
+            android:id="@+id/itemTotalItem"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_table_cells_non_round"
+            android:gravity="center|left"
+            android:paddingLeft="3dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:text="Item Total"
+            android:textColor="#292929" />
+    </LinearLayout>
+
+</LinearLayout>

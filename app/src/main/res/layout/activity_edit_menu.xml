@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context=".editMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/textView4">
+
+        <TextView
+            android:id="@+id/sort"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/sort_type"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ID"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/sortASCDESC" />
+
+        <ImageView
+            android:id="@+id/sortASCDESC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_up" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/orderTableHeader"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/foodPic"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_table_cells"
+            android:padding="3dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/foodIdTV"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:text="ID"
+            android:textStyle="bold"
+            android:textColor="#292929" />
+
+        <TextView
+            android:id="@+id/foodNameTV"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Item Name"
+            android:textColor="#292929" />
+
+        <TextView
+            android:id="@+id/foodTypeTV"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Type"
+            android:textColor="#292929" />
+
+        <TextView
+            android:id="@+id/foodPriceTV"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_table_cells"
+            android:gravity="center"
+            android:text="Price"
+            android:textStyle="bold"
+
+            android:textColor="#292929" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/editTableFrame"
+        android:layout_width="match_parent"
+        android:layout_height="381dp"
+        android:layout_above="@+id/addItem"
+        android:background="@color/white"
+        android:layout_below="@+id/orderTableHeader"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/addItem"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+            android:id="@+id/editMenuTableLV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:dividerHeight="-0.5dp"
+            android:footerDividersEnabled="false"
+            tools:layout_editor_absoluteX="15dp"
+            android:scrollbars="none"
+            tools:layout_editor_absoluteY="40dp" >
+
+
+        </ListView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center|left"
+        android:text="Menu Table"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/manageUserPanel"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/background_with_shadow"
+        android:elevation="100dp"
+        android:visibility="visible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.28">
+
+
+        <ImageView
+            android:id="@+id/foodPic2"
+            android:layout_width="43dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_action_name_file_food"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editRadioGroup"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
+            app:endIconMode="clear_text"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDescription">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Food Name"
+                android:padding="0dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            app:endIconMode="clear_text"
+
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editRadioGroup">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Food Price"
+                android:inputType="numberDecimal"
+                android:padding="0dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/editDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="Add Food to Menu"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RadioGroup
+            android:id="@+id/editRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+            <RadioButton
+                android:id="@+id/codPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_background_shadow"
+                android:button="@null"
+                android:gravity="center"
+                android:onClick="editMealType"
+                android:tag="Meal"
+                android:text="Meal"
+                android:textColor="@color/jollibee" />
+
+            <RadioButton
+                android:id="@+id/gcashPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_background_shadow"
+                android:button="@null"
+                android:gravity="center"
+                android:onClick="editMealType"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:tag="Drinks"
+                android:text="Drinks"
+                android:textColor="@color/jollibee" />
+
+            <RadioButton
+                android:id="@+id/paymayaPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_background_shadow"
+                android:button="@null"
+                android:gravity="center"
+                android:onClick="editMealType"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:tag="Dessert"
+                android:text="Dessert"
+                android:textColor="@color/jollibee" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/editSaveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="15dp"
+            android:text="Save"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+        <Button
+            android:id="@+id/editAddImage"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:autoSizePresetSizes="@array/text_sizes2"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="#C8C8C8"
+            android:drawableLeft="@drawable/ic_action_name_file"
+            android:text="Add Image"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            app:layout_constraintEnd_toStartOf="@+id/foodPic2"
+            app:layout_constraintHorizontal_bias="0.982"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/editRadioGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/addItem"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/manageUserPanel"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toStartOf="@+id/deleteItemBtn"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/manageUserPanel"
+        app:layout_constraintEnd_toStartOf="@+id/deleteItemBtn" />
+
+    <Button
+        android:id="@+id/editItemBtn"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/manageUserPanel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="3dp"
+        android:text="Edit"
+        android:enabled="false"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/manageUserPanel"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/deleteItemBtn"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/manageUserPanel"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toStartOf="@+id/editItemBtn"
+        android:enabled="false"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/manageUserPanel"
+        app:layout_constraintEnd_toStartOf="@+id/editItemBtn" />
+
+
+</RelativeLayout>
